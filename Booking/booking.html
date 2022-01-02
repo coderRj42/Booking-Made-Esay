@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\xampp\htdocs\php\stadium-main\Booking\book2.css">
+    <title>Booking </title>
+</head>
+
+<body class="main_bg">
+    <div class="form">
+        <div class="form-text">
+            <h1><span><img src="art-1.png" alt=""></span>Book Now <span><img src="art-1.png" alt=""></span></h1>
+            <p>Book your tickets now for exciting offers!</p>
+        </div>
+        <div class="main-form">
+            <form action="index.php" method="get">
+                <div>
+                    <span>Name</span>
+                    <input type="text" name="name" id="name" placeholder="Write your name here..." required>
+                </div>
+                <div>
+                    <span>Email address</span>
+                    <input type="email" name="name" id="name" placeholder="Write your email here..." required> 
+                </div>
+               
+                <div>
+                    <span>Adults</span>
+                    <input type="number" name="time" id="time"  onkeypress="return event.charCode>=48" min="1"required>
+                </div>
+                <div>
+                    <span>Kids</span>
+                    <input type="number" name="date" id="date" onkeypress="return event.charCode>=48" min="0"required>
+                </div>
+                <div>
+                   
+                    <span>Select Pavilion</span>
+                    <select name="people" id="people" required>
+                       <option selected disabled></option>
+                        <option value="1">Adani Lower Pavilion</option>
+                        <option value="2">Amarnath Pavilion</option>
+                        <option value="3">Adani Upper Pavilion</option>
+                        <option value="4">M.S.Dhoni Pavilion/option>
+                        <option value="5">Virat Kohli Pavilion</option>
+                        <option value="6">Rahul Dravid Pavilion </option>
+                    </select>
+                  
+                </div>
+                <div>
+                    <span>Phone Number</span>
+                    <input type="text" name="number" id="number" placeholder="Write your number here..." required>
+                </div>
+                <div id="submit">
+                   <a href="C:\xampp\htdocs\php\stadium-main\Booking\payment.html">
+                       <input type="submit">
+                   </a>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
